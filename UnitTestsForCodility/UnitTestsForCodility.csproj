@@ -42,17 +42,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AlgoCountingElementsTest.cs" />
-    <Compile Include="AlgoCountingNegativeElementsTest.cs" />
-    <Compile Include="AlgoSwipingElementsTest.cs" />
-    <Compile Include="FrogRiverOneTest.cs" />
-    <Compile Include="FrogJumpTest.cs" />
-    <Compile Include="MaxCounterTest.cs" />
-    <Compile Include="MissingElementTest.cs" />
-    <Compile Include="MissingIntegerTest.cs" />
-    <Compile Include="PermCheckTest.cs" />
+    <Compile Include="0. Algorithms from lessons\AlgoCountingElementsTest.cs" />
+    <Compile Include="0. Algorithms from lessons\AlgoCountingNegativeElementsTest.cs" />
+    <Compile Include="0. Algorithms from lessons\AlgoSwipingElementsTest.cs" />
+    <Compile Include="2. Counting Elements\FrogRiverOneTest.cs" />
+    <Compile Include="1. Time Complexity\FrogJumpTest.cs" />
+    <Compile Include="2. Counting Elements\MaxCounterTest.cs" />
+    <Compile Include="1. Time Complexity\MissingElementTest.cs" />
+    <Compile Include="2. Counting Elements\MissingIntegerTest.cs" />
+    <Compile Include="2. Counting Elements\PermCheckTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TestForTypeEuilibrium.cs" />
+    <Compile Include="1. Time Complexity\TestForTypeEuilibrium.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Codiliyt Training\Codiliyt Training.csproj">

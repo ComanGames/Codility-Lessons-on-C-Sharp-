@@ -41,19 +41,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AlgosFromCodility.cs" />
-    <Compile Include="FrogJump.cs" />
-    <Compile Include="FrogRiverOne.cs" />
-    <Compile Include="MaxCounters.cs" />
-    <Compile Include="MissingElement.cs" />
-    <Compile Include="MissingInteger.cs" />
-    <Compile Include="PermCheck.cs" />
+    <Compile Include="1.Time Complexity\FrogJump.cs" />
+    <Compile Include="2.Counting Elements\FrogRiverOne.cs" />
+    <Compile Include="2.Counting Elements\MaxCounters.cs" />
+    <Compile Include="1.Time Complexity\MissingElement.cs" />
+    <Compile Include="2.Counting Elements\MissingInteger.cs" />
+    <Compile Include="2.Counting Elements\PermCheck.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TypeOfEquilbrium.cs" />
+    <Compile Include="1.Time Complexity\TypeOfEquilbrium.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
