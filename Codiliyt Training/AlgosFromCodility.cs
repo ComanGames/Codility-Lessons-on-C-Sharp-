@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Linq;
-using System.Security.Cryptography;
+using static System.Math;
 
 namespace Codiliyt_Training
 {
@@ -113,5 +113,56 @@ namespace Codiliyt_Training
 				else if (Negative != null) Negative[(i1*-1) - 1]++;
 			}
 		}
+
+		public static long[] PrefixSum(int[] A)
+		{
+			if(A==null)
+				throw new ArgumentNullException("Our array A is equal to null");
+			long[]result=new long[A.Length+1];
+			if (A.Length == 0)
+				return result;
+			for (int i = 1; i < result.Length; i++)
+			{
+				result[i] = result[i - 1] + A[i - 1];
+				
+			}
+			return result;
+
+		}
+
+		public static long TotalOfSlice(long[] Prefix, uint x, uint y)
+		{
+			if(Prefix==null)
+				throw new ArgumentNullException();
+			if(x>y)
+				throw new ArgumentOutOfRangeException("X are bigger then Y");
+			if(y>=Prefix.Length)
+				throw new ArgumentOutOfRangeException("Y is out of array border");
+			return Prefix[y + 1] - Prefix[x];
+		}
+
+		public static long MashroomPicker(int[] A, ulong k, ulong m)
+		{
+			if(A==null)
+				throw new ArgumentNullException();
+			if((int)k>=A.Length)
+				throw new ArgumentOutOfRangeException();
+			ulong result = 0;
+			long[] Prefix = PrefixSum(A);
+			for (int i = 0; i < (int)Math.Min(m,k)+1; i++)
+			{
+				int leftPos = (int) k - i;
+				int rightPos = Math.Min(A.Length - 1, Math.Max((int) k, (int) (k - m) - (2*i)));
+				result = Math.Max(result,(ulong)TotalOfSlice(Prefix, (uint) leftPos, (uint) rightPos));
+			}
+			for (int i = 0; i < Math.Min((int)m,A.Length-(int)k); i++)
+			{
+				int rightPos = (int) k + i;
+				int leftPos = Max(0, Min((int) k, (int) k - ((int)m - (2*i))));
+				result = Max(result, (ulong) TotalOfSlice(Prefix, (uint) leftPos, (uint) rightPos));
+			}
+			return (long)result;
+		}
+		
 	}
 }
