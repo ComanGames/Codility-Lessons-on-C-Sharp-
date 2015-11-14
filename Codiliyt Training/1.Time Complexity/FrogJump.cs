@@ -4,7 +4,16 @@ namespace Codiliyt_Training
 {
 	public class FrogJump
 	{
-		public static int solution(int X, int Y, int D)
+		/// <summary>
+		/// How many jumps from should done to
+		/// get to other side of the road 
+		/// More mathematical task then programming
+		/// </summary>
+		/// <param name="X"></param>
+		/// <param name="Y"></param>
+		/// <param name="D"></param>
+		/// <returns></returns>
+		public static int Solution(int X, int Y, int D)
 		{
 			
 			if(X<1||Y<1||D<1||X>1000000000||Y>1000000000||D>1000000000)

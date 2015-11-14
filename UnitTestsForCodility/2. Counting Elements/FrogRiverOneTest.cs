@@ -19,7 +19,7 @@ namespace Codiliyt_Training
 			bool catchException = false;
 			try
 			{
-				FrogRiverOne.Soulution(5, null);
+				FrogRiverOne.Solution(5, null);
 			}
 			catch (ArgumentNullException)
 			{
@@ -40,7 +40,7 @@ namespace Codiliyt_Training
 			bool catchException = false;
 			try
 			{
-				FrogRiverOne.Soulution(0, new int[5]);
+				FrogRiverOne.Solution(0, new int[5]);
 			}
 			catch (ArgumentOutOfRangeException)
 			{
@@ -60,7 +60,7 @@ namespace Codiliyt_Training
 			bool catchException = false;
 			try
 			{
-				FrogRiverOne.Soulution(5, new int[100001]);
+				FrogRiverOne.Solution(5, new int[100001]);
 			}
 			catch (ArgumentOutOfRangeException)
 			{
@@ -82,37 +82,37 @@ namespace Codiliyt_Training
 		[Test]
 		public void ExampleTest()
 		{
-			Assert.AreEqual(6, FrogRiverOne.Soulution(5,new [] {1,3,1,4,2,3,5,4}));
+			Assert.AreEqual(6, FrogRiverOne.Solution(5,new [] {1,3,1,4,2,3,5,4}));
 		}
 
 		[Test]
 		public void StraightTest()
 		{
-			Assert.AreEqual(2, FrogRiverOne.Soulution(3,new[] {1, 2, 3, 1, 1, 3, 2}));
+			Assert.AreEqual(2, FrogRiverOne.Solution(3,new[] {1, 2, 3, 1, 1, 3, 2}));
 		}
 
 		[Test]
 		public void NegativeTest()
 		{
-			Assert.AreEqual(-1, FrogRiverOne.Soulution(3,new [] {1,1,3,1,3}));
+			Assert.AreEqual(-1, FrogRiverOne.Solution(3,new [] {1,1,3,1,3}));
 		}
 
 		[Test]
 		public void OpositeTest()
 		{
-			Assert.AreEqual(2, FrogRiverOne.Soulution(3,new[] {3,2,1, 1, 1, 3, 2}));
+			Assert.AreEqual(2, FrogRiverOne.Solution(3,new[] {3,2,1, 1, 1, 3, 2}));
 		}
 
 		[Test]
 		public void OneElementTest()
 		{
-			Assert.AreEqual(0, FrogRiverOne.Soulution(1,new[] {1}));
+			Assert.AreEqual(0, FrogRiverOne.Solution(1,new[] {1}));
 		}
 
 		[Test]
 		public void NotEnoughElementsTest()
 		{
-			Assert.AreEqual(-1, FrogRiverOne.Soulution(6,new [] {1,3,5}));
+			Assert.AreEqual(-1, FrogRiverOne.Solution(6,new [] {1,3,5}));
 		}
 
 		[TearDown]

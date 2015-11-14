@@ -22,7 +22,7 @@ namespace Codiliyt_Training
 			bool catchException = false;
 			try
 			{
-				MissingElement.solution(null);
+				MissingElement.Solution(null);
 			}
 			catch (ArgumentNullException)
 			{
@@ -42,7 +42,7 @@ namespace Codiliyt_Training
 			bool catchException = false;
 			try
 			{
-				MissingElement.solution(new int[100001]);
+				MissingElement.Solution(new int[100001]);
 			}
 			catch (ArgumentOutOfRangeException)
 			{
@@ -62,7 +62,7 @@ namespace Codiliyt_Training
 			bool catchException = false;
 			try
 			{
-				MissingElement.solution(new []{1,4});
+				MissingElement.Solution(new []{1,4});
 			}
 			catch (ArgumentOutOfRangeException)
 			{
@@ -82,19 +82,19 @@ namespace Codiliyt_Training
 		[Test]
 		public void FirstElemntTest()
 		{
-			Assert.AreEqual(1, MissingElement.solution(new []{2,5,4,3,6}));
+			Assert.AreEqual(1, MissingElement.Solution(new []{2,5,4,3,6}));
 		}
 
 		[Test]
 		public void LastElementTest()
 		{
-			Assert.AreEqual(6, MissingElement.solution(new [] {1,3,5,4,2}));
+			Assert.AreEqual(6, MissingElement.Solution(new [] {1,3,5,4,2}));
 		}
 
 		[Test]
 		public void SortedArrayTest()
 		{
-			Assert.AreEqual(4, MissingElement.solution(new []{1,2,3,5,6,7}));
+			Assert.AreEqual(4, MissingElement.Solution(new []{1,2,3,5,6,7}));
 		}
 		// To big array                 public static IEnumerable<int> Range(1,100000).Remove(88555).ToArray();
 		// Array of two elemens         1,3
@@ -108,25 +108,25 @@ namespace Codiliyt_Training
 			List<int> list = Enumerable.Range(1, 100000).ToList();
 			list.Remove(elemnt);
 			int[] A = list.ToArray();
-			Assert.AreEqual(elemnt, MissingElement.solution(A));
+			Assert.AreEqual(elemnt, MissingElement.Solution(A));
 		}
 
 		[Test]
 		public void TwoElementsTest()
 		{
-			Assert.AreEqual(2, MissingElement.solution(new[] {1, 3}));
+			Assert.AreEqual(2, MissingElement.Solution(new[] {1, 3}));
 		}
 
 		[Test]
 		public void OneElementTest()
 		{
-			Assert.AreEqual(2, MissingElement.solution(new[] {1}));
+			Assert.AreEqual(2, MissingElement.Solution(new[] {1}));
 		}
 
 		[Test]
 		public void ZeroElementsTest()
 		{
-			Assert.AreEqual(1,MissingElement.solution(new int[0]) );
+			Assert.AreEqual(1,MissingElement.Solution(new int[0]) );
 		}
 		[TearDown]
 		public void TearDown()

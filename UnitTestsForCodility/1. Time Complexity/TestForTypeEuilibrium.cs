@@ -20,7 +20,7 @@ namespace Codiliyt_Training
 			bool catchException = false;
 			try
 			{
-				TypeOfEqulibrium.solution(new int[] {1});
+				TypeOfEqulibrium.Solution(new int[] {1});
 			}
 			catch (ArgumentOutOfRangeException exception)
 			{
@@ -38,7 +38,7 @@ namespace Codiliyt_Training
 			bool catchException = false;
 			try
 			{
-				TypeOfEqulibrium.solution(new int[100001]);
+				TypeOfEqulibrium.Solution(new int[100001]);
 			}
 			catch (ArgumentOutOfRangeException exception)
 			{
@@ -58,7 +58,7 @@ namespace Codiliyt_Training
 			bool catchException = false;
 			try
 			{
-				TypeOfEqulibrium.solution(new int[] {5, 6, 8, 1001, -1001});
+				TypeOfEqulibrium.Solution(new int[] {5, 6, 8, 1001, -1001});
 			}
 			catch (ArgumentOutOfRangeException exception)
 			{
@@ -78,7 +78,7 @@ namespace Codiliyt_Training
 			bool catchException = false;
 			try
 			{
-				TypeOfEqulibrium.solution(null);
+				TypeOfEqulibrium.Solution(null);
 			}
 			catch (ArgumentNullException)
 			{
@@ -94,20 +94,20 @@ namespace Codiliyt_Training
 		[Test]
 		public void ExampleTest()
 		{
-			Assert.AreEqual(1, TypeOfEqulibrium.solution(new int[] { 3,1,2,4,3}));
+			Assert.AreEqual(1, TypeOfEqulibrium.Solution(new int[] { 3,1,2,4,3}));
 		}
 
 		[Test]
 		public void EmptyArrayTest()
 		{
-			Assert.AreEqual(0, TypeOfEqulibrium.solution(new int[4]));
+			Assert.AreEqual(0, TypeOfEqulibrium.Solution(new int[4]));
 		}
 
 
 		[Test]
 		public void TwoElementTest()
 		{
-			Assert.AreEqual(2, TypeOfEqulibrium.solution(new int[] {3, 5})); 
+			Assert.AreEqual(2, TypeOfEqulibrium.Solution(new int[] {3, 5})); 
 		}
 		[TearDown]
 		public void TearDown()

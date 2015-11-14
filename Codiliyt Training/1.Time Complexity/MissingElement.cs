@@ -5,7 +5,12 @@ namespace Codiliyt_Training
 	public class MissingElement
 	{
 
-		public static int solution(int[]A)
+		/// <summary>
+		/// The task was to find the missing element in the array
+		/// </summary>
+		/// <param name="A"></param>
+		/// <returns></returns>
+		public static int Solution(int[]A)
 		{
 			if(A==null)
 				throw new ArgumentNullException();

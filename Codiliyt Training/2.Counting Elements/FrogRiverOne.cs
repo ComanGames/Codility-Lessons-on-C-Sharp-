@@ -6,7 +6,19 @@ namespace Codiliyt_Training
 	public class FrogRiverOne
 	{
 
-		public static int Soulution(int X, int[] A)
+
+		/// <summary>
+		/// Task was find in what moment of time
+		/// The frog will be able to get to other side
+		/// So we looking is frog able to get to other side at all
+		/// Then we getting array with moments when frog can get to 
+		/// other side and then we saving moments in reverse order
+		/// So max moment will be the moment when frog can get to other side
+		/// </summary>
+		/// <param name="X"></param>
+		/// <param name="A"></param>
+		/// <returns></returns>
+		public static int Solution(int X, int[] A)
 		{
 			if(A==null)
 				throw new ArgumentNullException();

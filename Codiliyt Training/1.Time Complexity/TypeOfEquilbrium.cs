@@ -6,9 +6,14 @@ namespace Codiliyt_Training
 {
 	public class TypeOfEqulibrium
 	{
-		public static int solution(int[]A)
+		/// <summary>
+		/// The task was to find minimal positive difrence
+		/// Between two parts of Array
+		/// </summary>
+		/// <param name="A"></param>
+		/// <returns></returns>
+		public static int Solution(int[]A)
 		{
-
 			if(A==null)
 				throw new ArgumentNullException();
 			if(A.Length<2||A.Length>100000)	
