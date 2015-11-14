@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="4. Sorting\NumberOfDisc.cs" />
     <Compile Include="AlgosFromCodility.cs" />
     <Compile Include="1.Time Complexity\FrogJump.cs" />
     <Compile Include="2.Counting Elements\FrogRiverOne.cs" />
@@ -47,9 +48,15 @@
     <Compile Include="1.Time Complexity\MissingElement.cs" />
     <Compile Include="2.Counting Elements\MissingInteger.cs" />
     <Compile Include="2.Counting Elements\PermCheck.cs" />
+    <Compile Include="3. Prefix Sum\CountDiv.cs" />
+    <Compile Include="3. Prefix Sum\PassingCars.cs" />
+    <Compile Include="4. Sorting\Distinct.cs" />
+    <Compile Include="4. Sorting\MaxProductOfTree.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="1.Time Complexity\TypeOfEquilbrium.cs" />
+    <Compile Include="3. Prefix Sum\TwoSlice.cs" />
+    <Compile Include="4. Sorting\Triangle.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

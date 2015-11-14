@@ -1,7 +1,8 @@
 ﻿using System;
+using Codiliyt_Training;
 using NUnit.Framework;
 
-namespace Codiliyt_Training
+namespace UnitTestsForCodility._1._Time_Complexity
 {
 	[TestFixture]
 	public class FrogJumpTest
@@ -19,7 +20,7 @@ namespace Codiliyt_Training
 			int catchException = 0;
 			try
 			{
-				FrogJump.solution(int.MaxValue, 5, 5);
+				FrogJump.Solution(int.MaxValue, 5, 5);
 			}
 			catch (ArgumentOutOfRangeException)
 			{
@@ -28,7 +29,7 @@ namespace Codiliyt_Training
 
 			try
 			{
-				FrogJump.solution(5, int.MaxValue, 5);
+				FrogJump.Solution(5, int.MaxValue, 5);
 			}
 			catch (ArgumentOutOfRangeException)
 			{
@@ -37,7 +38,7 @@ namespace Codiliyt_Training
 
 			try
 			{
-			FrogJump.solution(5, 5, int.MaxValue);
+			FrogJump.Solution(5, 5, int.MaxValue);
 			}
 			catch (ArgumentOutOfRangeException)
 			{
@@ -47,7 +48,7 @@ namespace Codiliyt_Training
 			
 			try
 			{
-			FrogJump.solution(0, 5, 5);
+			FrogJump.Solution(0, 5, 5);
 			}
 			catch (ArgumentOutOfRangeException)
 			{
@@ -55,7 +56,7 @@ namespace Codiliyt_Training
 			}
 			try
 			{
-			FrogJump.solution(5, 0, 5);
+			FrogJump.Solution(5, 0, 5);
 			}
 			catch (ArgumentOutOfRangeException)
 			{
@@ -63,7 +64,7 @@ namespace Codiliyt_Training
 			}
 			try
 			{
-			FrogJump.solution(0, 0, 0);
+			FrogJump.Solution(0, 0, 0);
 			}
 			catch (ArgumentOutOfRangeException)
 			{
@@ -71,7 +72,7 @@ namespace Codiliyt_Training
 			}
 			try
 			{
-				FrogJump.solution(5, 5, 0);
+				FrogJump.Solution(5, 5, 0);
 			}
 			catch (ArgumentOutOfRangeException)
 			{
@@ -90,7 +91,7 @@ namespace Codiliyt_Training
 			bool catchException = false;
 			try
 			{
-				FrogJump.solution(15, 4, 5);	
+				FrogJump.Solution(15, 4, 5);	
 
 			}
 			catch (ArgumentException)
@@ -108,7 +109,7 @@ namespace Codiliyt_Training
 		[Test]
 		public void ExampleTest()
 		{
-			Assert.AreEqual(3, FrogJump.solution(10,85,30));
+			Assert.AreEqual(3, FrogJump.Solution(10,85,30));
 		}
 		// exactly on the position  X=20,Y=50,D=15;should return 2
 		// with start positon 0     X=0, Y=255,D=2; should return128
@@ -116,25 +117,25 @@ namespace Codiliyt_Training
 		[Test]
 		public void ExactlyOnPostionTest()
 		{
-			Assert.AreEqual(2, FrogJump.solution(20,50,15));
+			Assert.AreEqual(2, FrogJump.Solution(20,50,15));
 		}
 
 		[Test]
 		public void WitheZeroStartTest()
 		{
-			Assert.AreEqual(128, FrogJump.solution(1,256,2));
+			Assert.AreEqual(128, FrogJump.Solution(1,256,2));
 		}
 
 		[Test]
 		public void OneJumpTest()
 		{
-			Assert.AreEqual(1, FrogJump.solution(30,60,80));
+			Assert.AreEqual(1, FrogJump.Solution(30,60,80));
 		}
 
 		[Test]
 		public void ZeroJumpTest()
 		{
-			Assert.AreEqual(0, FrogJump.solution(30,30,10));
+			Assert.AreEqual(0, FrogJump.Solution(30,30,10));
 		}
 		[TearDown]
 		public void TearDown()

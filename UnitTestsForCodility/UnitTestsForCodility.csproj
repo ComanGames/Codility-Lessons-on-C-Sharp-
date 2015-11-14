@@ -45,6 +45,15 @@
     <Compile Include="0. Algorithms from lessons\AlgoCountingElementsTest.cs" />
     <Compile Include="0. Algorithms from lessons\AlgoCountingNegativeElementsTest.cs" />
     <Compile Include="0. Algorithms from lessons\AlgoSwipingElementsTest.cs" />
+    <Compile Include="0. Algorithms from lessons\MashroomPicer.cs" />
+    <Compile Include="0. Algorithms from lessons\NumberOfDiscIntersectionsTest.cs" />
+    <Compile Include="0. Algorithms from lessons\PrefixSumTest.cs" />
+    <Compile Include="1. Time Complexity\DistinctTest.cs" />
+    <Compile Include="1. Time Complexity\MaxProductOfTreeTest.cs" />
+    <Compile Include="1. Time Complexity\PassingCarsTest.cs" />
+    <Compile Include="1. Time Complexity\TriangleTest.cs" />
+    <Compile Include="1. Time Complexity\TwoSliceTest.cs" />
+    <Compile Include="3. Prefix Sum\CountDivisionTest.cs" />
     <Compile Include="2. Counting Elements\FrogRiverOneTest.cs" />
     <Compile Include="1. Time Complexity\FrogJumpTest.cs" />
     <Compile Include="2. Counting Elements\MaxCounterTest.cs" />
@@ -60,6 +69,7 @@
       <Name>Codiliyt Training</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
